@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Submission Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Project Submission Portal</h1>
+
+    <section id="login-section" class="card">
+      <h2>Login</h2>
+      <div class="form-row">
+        <label>Username</label>
+        <input type="text" id="login-username" />
+      </div>
+      <div class="form-row">
+        <label>Password</label>
+        <input type="password" id="login-password" />
+      </div>
+      <button id="login-btn" class="btn primary">Login</button>
+      <p id="login-error" class="error"></p>
+    </section>
+
+    <section id="navbar" class="navbar hidden">
+      <div>
+        <span id="welcome-text"></span>
+      </div>
+      <button id="logout-btn" class="btn">Logout</button>
+    </section>
+
+    <section id="admin-portal" class="card hidden">
+      <h2>Admin Portal - Users</h2>
+      <div class="toolbar">
+        <button id="add-user-btn" class="btn primary">Add User</button>
+      </div>
+      <table id="users-table">
+        <thead>
+          <tr><th>Username</th><th>Role</th><th>Actions</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <section id="teacher-portal" class="card hidden">
+      <h2>Teacher Portal - Projects</h2>
+      <div class="toolbar">
+        <button id="add-project-btn" class="btn primary">New Project</button>
+      </div>
+      <table id="projects-table">
+        <thead>
+          <tr><th>Title</th><th>Description</th><th>Actions</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <h3>Submissions for My Projects</h3>
+      <table id="teacher-submissions-table">
+        <thead>
+          <tr><th>Student</th><th>Project</th><th>Timestamp</th><th>File</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <section id="student-portal" class="card hidden">
+      <h2>Student Portal</h2>
+      <h3>Available Projects</h3>
+      <table id="student-projects-table">
+        <thead>
+          <tr><th>Title</th><th>Teacher</th><th>Description</th><th>Upload</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <h3>My Submissions</h3>
+      <table id="student-submissions-table">
+        <thead>
+          <tr><th>Project</th><th>Timestamp</th><th>File</th><th>Actions</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </div>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="modal-title">Modal</h3>
+        <button id="modal-close" class="btn">✕</button>
+      </div>
+      <div id="modal-body"></div>
+      <div class="modal-footer">
+        <button id="modal-confirm" class="btn primary">Confirm</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  </body>
+  </html>
+
+
