@@ -30,21 +30,15 @@ git clone https://github.com/<your-username>/project-submission-backend.git
 cd project-submission-backend
 mvn spring-boot:run
 Frontend:
-bash
-Copy code
 git clone https://github.com/<your-username>/project-submission-frontend.git
 cd project-submission-frontend
 Update the backend API URL in your JS file:
 
-js
-Copy code
-const API = "https://<your-render-backend-url>";
-Host using GitHub Pages from repo settings.
 
 🌐 Live Links
-Frontend (GitHub Pages): [Add Link]
+Frontend (GitHub Pages): 
 
-Backend (Render): [Add Link]
+Backend (Render): https://projectsubmissionsystem.onrender.com
 
 🧠 Learning Outcomes
 Applied OOP principles in Java
